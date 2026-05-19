@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sneha S S | Software Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#0f172a;
+      color:white;
+      line-height:1.6;
+    }
+
+    header{
+      position:fixed;
+      width:100%;
+      top:0;
+      z-index:1000;
+      background:#111827;
+      padding:15px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      box-shadow:0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    header h2{
+      color:#38bdf8;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    section{
+      padding:100px 8%;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
+    .hero-text{
+      flex:1;
+    }
+
+    .hero-text h1{
+      font-size:55px;
+      margin-bottom:10px;
+    }
+
+    .hero-text span{
+      color:#38bdf8;
+    }
+
+    .hero-text p{
+      margin:20px 0;
+      max-width:600px;
+      color:#cbd5e1;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 25px;
+      background:#38bdf8;
+      color:#000;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+    }
+
+    .hero-image{
+      flex:1;
+      text-align:center;
+    }
+
+    .hero-image img{
+      width:300px;
+      border-radius:50%;
+      border:5px solid #38bdf8;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:50px;
+      font-size:40px;
+      color:#38bdf8;
+    }
+
+    .about p{
+      text-align:center;
+      max-width:900px;
+      margin:auto;
+      color:#cbd5e1;
+    }
+
+    .skills-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:20px;
+    }
+
+    .skill-box{
+      background:#1e293b;
+      padding:20px;
+      border-radius:10px;
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .skill-box:hover{
+      transform:translateY(-5px);
+      background:#334155;
+    }
+
+    .experience-box{
+      background:#1e293b;
+      padding:30px;
+      border-radius:10px;
+      margin-top:20px;
+    }
+
+    .experience-box h3{
+      color:#38bdf8;
+    }
+
+    .experience-box ul{
+      margin-top:15px;
+      padding-left:20px;
+    }
+
+    .contact{
+      text-align:center;
+    }
+
+    .contact a{
+      color:#38bdf8;
+      text-decoration:none;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:#111827;
+      color:#94a3b8;
+    }
+
+    @media(max-width:768px){
+
+      .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+      }
+
+      .hero-text h1{
+        font-size:40px;
+      }
+
+      nav{
+        display:none;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>Sneha S S</h2>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+
+  <div class="hero-text">
+    <h1>Hello, I'm <span>Sneha S S</span></h1>
+
+    <h3>Software Developer</h3>
+
+    <p>
+      Software Developer with 3+ years of experience in ERP enhancement,
+      PHP, MySQL, Angular, JavaScript and backend development.
+      Passionate about building scalable applications and learning modern technologies.
+    </p>
+
+    <a href="#contact" class="btn">Contact Me</a>
+  </div>
+
+  <div class="hero-image">
+    <img src="https://cdn-icons-png.flaticon.com/512/6997/6997662.png">
+  </div>
+
+</section>
+
+<section id="about">
+
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about">
+    <p>
+      I am currently working as a Software Developer at Fluent Technologies,
+      contributing to ERP solutions for aerospace companies.
+      I specialize in backend development using PHP and MySQL,
+      while also developing responsive user interfaces using HTML, CSS,
+      Bootstrap, JavaScript, and Angular.
+    </p>
+  </div>
+
+</section>
+
+<section id="skills">
+
+  <h2 class="section-title">Technical Skills</h2>
+
+  <div class="skills-container">
+
+    <div class="skill-box">PHP</div>
+    <div class="skill-box">Python</div>
+    <div class="skill-box">MySQL</div>
+    <div class="skill-box">Angular</div>
+    <div class="skill-box">JavaScript</div>
+    <div class="skill-box">Bootstrap</div>
+    <div class="skill-box">HTML & CSS</div>
+    <div class="skill-box">Git Bash</div>
+    <div class="skill-box">Apache Server</div>
+    <div class="skill-box">WinSCP</div>
+    <div class="skill-box">PuTTY</div>
+
+  </div>
+
+</section>
+
+<section id="experience">
+
+  <h2 class="section-title">Experience</h2>
+
+  <div class="experience-box">
+
+    <h3>Software Developer — Fluent Technologies</h3>
+
+    <p>June 2023 - Present</p>
+
+    <ul>
+      <li>Developed ERP modules using PHP, MySQL, AJAX and jQuery</li>
+      <li>Worked on aerospace manufacturing ERP solutions</li>
+      <li>Handled Invoice, JV, Depreciation & Amortization modules</li>
+      <li>Managed deployments using Azure, WinSCP and PuTTY</li>
+      <li>Performed debugging, testing and optimization</li>
+      <li>Worked on CRM lead management workflows</li>
+    </ul>
+
+  </div>
+
+</section>
+
+<section id="contact">
+
+  <h2 class="section-title">Contact Me</h2>
+
+  <div class="contact">
+
+    <p>Email:
+      <a href="mailto:snehasnayak2000@gmail.com">
+        snehasnayak2000@gmail.com
+      </a>
+    </p>
+
+    <p>Phone: +91 9380150098</p>
+
+    <p>
+      LinkedIn:
+      <a href="https://linkedin.com/in/snehass08" target="_blank">
+        linkedin.com/in/snehass08
+      </a>
+    </p>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 Sneha S S | Portfolio Website
+</footer>
+
+</body>
+</html>
