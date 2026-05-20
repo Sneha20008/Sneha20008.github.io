@@ -319,6 +319,39 @@
     .exp-inner { grid-template-columns: 1fr; } .exp-card { position: static; }
     footer { flex-direction: column; gap: 12px; text-align: center; padding: 24px; }
   }
+  .hero-wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
+  padding:120px 60px 80px;
+  min-height:100vh;
+}
+
+.hero{
+  flex:1;
+  padding:0;
+}
+
+.exp-counter-section{
+  flex:0 0 420px;
+  padding:0;
+  display:flex;
+  justify-content:flex-end;
+}
+
+@media (max-width: 900px){
+  .hero-wrapper{
+    flex-direction:column;
+    padding:100px 24px 60px;
+  }
+
+  .exp-counter-section{
+    width:100%;
+    justify-content:center;
+    margin-top:40px;
+  }
+}
 </style>
 </head>
 <body>
@@ -341,63 +374,93 @@
 </nav>
 
 <!-- Hero -->
+<div class="hero-wrapper">
+
 <section class="hero">
   <div class="hero-left">
     <div class="hero-eyebrow">
       <span class="dot"></span>
       Available for new opportunities
     </div>
-    <h1 class="hero-name">Hello,<br>I'm <em>Sneha</em></h1>
-    <div class="hero-typed-wrap"><span id="typed"></span></div>
+
+    <h1 class="hero-name">
+      Hello,<br>I'm <em>Sneha</em>
+    </h1>
+
+    <div class="hero-typed-wrap">
+      <span id="typed"></span>
+    </div>
+
     <p class="hero-desc">
       Software Developer with experience in enhancing pre-developed ERP and CRM applications,
       adding new features and improving business workflows using PHP, MySQL, Angular,
       JavaScript, and Bootstrap.
     </p>
+
     <div class="hero-actions">
       <a href="#" class="btn-primary">
         Download Resume
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
       </a>
-      <a href="#contact" class="btn-ghost">Get in touch</a>
+
+      <a href="#contact" class="btn-ghost">
+        Get in touch
+      </a>
     </div>
   </div>
-  </section>
+</section>
 
 <!-- Vertical Experience Counter -->
 <div class="exp-counter-section">
   <div class="exp-counter">
+
     <div class="exp-counter-item reveal">
       <div class="exp-num-col">
         <div class="exp-num">2<span>+</span></div>
       </div>
+
       <div class="exp-divider"></div>
+
       <div class="exp-label-col">
         <div class="exp-label-main">Years of Experience</div>
-        <div class="exp-label-sub">2023 — Present · Fluent Technologies</div>
+        <div class="exp-label-sub">
+          2023 — Present · Fluent Technologies
+        </div>
       </div>
     </div>
+
     <div class="exp-counter-item reveal reveal-delay-1">
       <div class="exp-num-col">
         <div class="exp-num">2<span>+</span></div>
       </div>
+
       <div class="exp-divider"></div>
+
       <div class="exp-label-col">
         <div class="exp-label-main">Major Projects Delivered</div>
-        <div class="exp-label-sub">ERP · CRM · Workflow Enhancements</div>
+        <div class="exp-label-sub">
+          ERP · CRM · Workflow Enhancements
+        </div>
       </div>
     </div>
+
     <div class="exp-counter-item reveal reveal-delay-2">
       <div class="exp-num-col">
         <div class="exp-num">6<span>+</span></div>
       </div>
+
       <div class="exp-divider"></div>
+
       <div class="exp-label-col">
         <div class="exp-label-main">Technologies Mastered</div>
-        <div class="exp-label-sub">PHP · Angular · MySQL · JS · Bootstrap · Git</div>
+        <div class="exp-label-sub">
+          PHP · Angular · MySQL · JS · Bootstrap · Git
+        </div>
       </div>
     </div>
+
   </div>
+</div>
+
 </div>
 
 <!-- About -->
